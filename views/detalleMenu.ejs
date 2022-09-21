@@ -1,0 +1,48 @@
+<%- include('partials/head') %>
+
+  <body>
+    <%- include('partials/header') %>
+
+      <!-- Header -->
+      <header class="ps-display-container ps-content ps-wide" id="home">
+        <img class="ps-image" src="/images/header.jpg" alt="Pimienta & Sal" width="1600" height="800" />
+        <div class="ps-display-bottomleft ps-padding-large ps-opacity">
+          <h1 class="ps-xxlarge">
+            Sabores que enamoran
+          </h1>
+        </div>
+      </header>
+
+      <!-- Page content -->
+      <div class="ps-content">
+
+        <!-- Menu Section -->
+        <div class="ps-row ps-padding-64" id="menu">
+          <div class="ps-col l6 ps-padding-large">
+
+            <h1 class="ps-center">
+              <%= platoEncontrado.name %>
+            </h1>
+
+            <br />
+
+            <h4>
+              <%= platoEncontrado.description %>
+            </h4>
+
+            <p class="ps-text-grey">
+              <%= platoEncontrado.price %>
+            </p>
+
+          </div>
+
+          <div class="ps-col l6 ps-padding-large ps-img-menu">
+            <img src="<%= platoEncontrado.image %>" class="ps-round ps-image ps-opacity-min" alt="Menu" />
+          </div>
+        </div>
+
+        <%- include('partials/footer') %>
+      </div>
+  </body>
+
+  </html>
